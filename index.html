@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan | Frontend Developer & Security Specialist</title>
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MILANG</a>
+            <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" id="togglerIcon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#methodologies">Methodologies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tools">Pentesting Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero text-center text-white">
+        <div class="hero-content">
+            <h1 class="display-3 animate-fade-in">Hi, I'm <span class="text-highlight">MILAN</span></h1>
+            <p class="hero-tagline mt-3">
+                <span class="fixed-role">Web Developer</span> | 
+                <span class="fixed-role">Bug Hunter</span> | 
+                <span class="fixed-role">Security Researcher</span>
+            </p>
+            <div class="mt-4">
+                <a href="#" class="btn btn-primary px-4 py-2 me-2 me-md-3" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resume</a>
+                <a href="#contact" class="btn btn-outline-light px-4 py-2 ms-2 ms-md-3">Hire Me</a>
+            </div>
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/expose.everybody.2024" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/your-profile" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Milan-Gautam" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://hackerone.com/milang" target="_blank"><i class="bi bi-shield-shaded"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator mt-5">
+            <a href="#about" class="text-white">
+                <i class="bi bi-chevron-down floating" style="font-size: 2rem;"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="40" data-suffix="+">0+</span>
+                            <span class="stat-label">Reports Submitted</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="30" data-suffix="+">0+</span>
+                            <span class="stat-label">Vulnerabilities Found</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2" data-suffix="+">0+</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15" data-suffix="+">0+</span>
+                            <span class="stat-label">Websites Secured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                <div class="col-md-5 text-center about-img-container">
+    <img src="https://i.ibb.co/PGkg45KG/1768160732563.png" 
+         class="img-fluid about-img hover-lift" 
+         alt="Milan - Security Researcher">
+</div> 
+    </div>
+                <div class="col-md-7">
+                    <p class="lead">
+                        I'm a <strong>Security Researcher</strong> and <strong>Penetration Tester</strong> with hands-on experience in <strong>web development</strong>, focused on bug hunting and securing modern web applications.
+                    </p>
+                    <p>
+    When not coding or hunting vulnerabilities on platforms like <strong>HackerOne</strong> and <strong>Intigriti</strong>, I document security research, contribute to open-source security tools, and continuously explore emerging cybersecurity trends to strengthen real-world defenses.
+</p>
+                    
+                    <div class="mt-4 core-competencies">
+                        <h5 class="mb-4">Core Competencies</h5>
+                        <div class="competency-item">
+                            <div class="competency-header">
+                                <span class="competency-title">Frontend Development</span>
+                                <span class="competency-percentage">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="competency-item">
+                            <div class="competency-header">
+                                <span class="competency-title">Web Security</span>
+                                <span class="competency-percentage">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bug-hunting" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="competency-item">
+                            <div class="competency-header">
+                                <span class="competency-title">Penetration Testing</span>
+                                <span class="competency-percentage">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar pentesting" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary mt-3 pulse">Let's Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding security-section text-white">
+        <div class="container">
+            <h2 class="section-title text-center">My Expertise</h2>
+            <p class="lead text-center mb-5">With a diverse skill set, I specialize in delivering high-quality solutions across multiple domains.</p>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="security-item hover-lift">
+                        <i class="bi bi-code-slash display-4 text-primary"></i>
+                        <h4>Web Development</h4>
+                        <p>Creating responsive, user-friendly websites using HTML, CSS, JavaScript, and modern frameworks with a focus on security best practices.</p>
+                        <div class="tech-stack mt-3">
+                            <span class="tech-badge">HTML5/CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="security-item hover-lift">
+                        <i class="bi bi-bug display-4 text-danger"></i>
+                        <h4>Bug Hunting & Research</h4>
+                        <p>Active participation in bug bounty programs, identifying and responsibly disclosing security vulnerabilities in web applications.</p>
+                        <div class="tech-stack mt-3">
+                            <span class="tech-badge">HackerOne</span>
+                            <span class="tech-badge">Bugcrowd</span>
+                            <span class="tech-badge">Vulnerability Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="security-item hover-lift">
+                        <i class="bi bi-shield-lock display-4 text-warning"></i>
+                        <h4>Penetration Testing</h4>
+                        <p>Conducting security assessments, vulnerability analysis, and providing expert security consultation for web applications.</p>
+                        <div class="tech-stack mt-3">
+                            <span class="tech-badge">Penetration Testing</span>
+                            <span class="tech-badge">Vulnerability Assessment</span>
+                            <span class="tech-badge">Security Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-outline-light">Get Security Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding experience-section">
+        <div class="container">
+            <h2 class="section-title text-center">Professional Experience</h2>
+            <p class="lead text-center mb-5">My journey in web development and security</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="experience-card">
+                        <i class="bi bi-laptop experience-icon"></i>
+                        <span class="experience-date">2023 - Present</span>
+                        <h4>Frontend Developer</h4>
+                        <p class="text-muted">Freelance & Contract Work</p>
+                        <p>Developing responsive web applications with a focus on security best practices and user experience.</p>
+                        <div class="tech-stack mt-3">
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="experience-card">
+                        <i class="bi bi-shield-check experience-icon"></i>
+                        <span class="experience-date">2024 - Present</span>
+                        <h4>Bug Bounty Hunter</h4>
+                        <p class="text-muted">Various Platforms</p>
+                        <p>Participating in bug bounty programs, identifying and responsibly disclosing security vulnerabilities in web applications.</p>
+                        <div class="tech-stack mt-3">
+                            <span class="tech-badge">Bug Hunting</span>
+                            <span class="tech-badge">Penetration Testing</span>
+                            <span class="tech-badge">Vulnerability Assessment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="experience-card">
+                        <i class="bi bi-pencil-square experience-icon"></i>
+                        <span class="experience-date">2025 - Present</span>
+                        <h4>Security Content Writer</h4>
+                        <p class="text-muted">Technical Blog & Reports</p>
+                        <p>Creating detailed bug bounty reports and educational content on penetration testing methodologies and tools during free times.</p>
+                        <div class="tech-stack mt-3">
+                            <span class="tech-badge">Technical Writing</span>
+                            <span class="tech-badge">Bug Reports</span>
+                            <span class="tech-badge">Educational Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodologies Section (UPDATED) -->
+    <section id="methodologies" class="section-padding methodologies-section">
+        <div class="container">
+            <h2 class="section-title text-center">Security Methodologies</h2>
+            <p class="lead text-center mb-5">Professional security assessment approach based on OWASP and industry standards</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="methodology-card hover-lift">
+                        <div class="methodology-header">
+                            <div class="methodology-number">01</div>
+                            <i class="bi bi-binoculars methodology-icon"></i>
+                        </div>
+                        <h4>Reconnaissance</h4>
+                        <p>Gathering intelligence about target systems, identifying attack surfaces, and mapping the application structure.</p>
+                        <div class="methodology-tags">
+                            <span>OSINT</span>
+                            <span>Subdomain Enumeration</span>
+                            <span>Technology Stack</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="methodology-card hover-lift">
+                        <div class="methodology-header">
+                            <div class="methodology-number">02</div>
+                            <i class="bi bi-search methodology-icon"></i>
+                        </div>
+                        <h4>Vulnerability Analysis</h4>
+                        <p>Identifying security weaknesses through automated scanning and manual testing techniques.</p>
+                        <div class="methodology-tags">
+                            <span>Automated Scanning</span>
+                            <span>Manual Testing</span>
+                            <span>Configuration Review</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="methodology-card hover-lift">
+                        <div class="methodology-header">
+                            <div class="methodology-number">03</div>
+                            <i class="bi bi-shield-exclamation methodology-icon"></i>
+                        </div>
+                        <h4>Exploitation</h4>
+                        <p>Responsibly exploiting identified vulnerabilities to validate impact and demonstrate business risk.</p>
+                        <div class="methodology-tags">
+                            <span>Proof of Concept</span>
+                            <span>Impact Validation</span>
+                            <span>Risk Assessment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="methodology-card hover-lift">
+                        <div class="methodology-header">
+                            <div class="methodology-number">04</div>
+                            <i class="bi bi-clipboard-data methodology-icon"></i>
+                        </div>
+                        <h4>Post-Exploitation</h4>
+                        <p>Assessing the extent of access gained and identifying potential lateral movement opportunities.</p>
+                        <div class="methodology-tags">
+                            <span>Access Assessment</span>
+                            <span>Data Exposure</span>
+                            <span>Impact Scope</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="methodology-card hover-lift">
+                        <div class="methodology-header">
+                            <div class="methodology-number">05</div>
+                            <i class="bi bi-file-earmark-text methodology-icon"></i>
+                        </div>
+                        <h4>Reporting</h4>
+                        <p>Documenting findings with clear technical details, risk ratings, and actionable remediation steps.</p>
+                        <div class="methodology-tags">
+                            <span>Technical Reports</span>
+                            <span>Executive Summary</span>
+                            <span>Remediation Guide</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="methodology-card hover-lift">
+                        <div class="methodology-header">
+                            <div class="methodology-number">06</div>
+                            <i class="bi bi-arrow-repeat methodology-icon"></i>
+                        </div>
+                        <h4>Remediation Testing</h4>
+                        <p>Verifying that security vulnerabilities have been properly addressed and validated after fixes.</p>
+                        <div class="methodology-tags">
+                            <span>Validation Testing</span>
+                            <span>Patch Verification</span>
+                            <span>Compliance Check</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- OWASP Focus Section -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="owasp-highlight text-center">
+                        <h4 class="mb-3"><i class="bi bi-shield-check me-2"></i>OWASP Top 10 Focus</h4>
+                        <div class="owasp-badges">
+                            <span class="owasp-badge" data-tooltip="Broken Access Control">A01</span>
+                            <span class="owasp-badge" data-tooltip="Security Misconfiguration">A02</span>
+                            <span class="owasp-badge" data-tooltip="Software Supply Chain Failures">A03</span>
+                            <span class="owasp-badge" data-tooltip="Cryptographic Failures">A04</span>
+                            <span class="owasp-badge" data-tooltip="Injection">A05</span>
+                            <span class="owasp-badge" data-tooltip="Insecure Design">A06</span>
+                            <span class="owasp-badge" data-tooltip="Authentication Failures">A07</span>
+                            <span class="owasp-badge" data-tooltip="Software and Data Integrity">A08</span>
+                            <span class="owasp-badge" data-tooltip="Logging and Alerting Failures">A09</span>
+                            <span class="owasp-badge" data-tooltip="Mishandling of Conditions">A10</span>
+                        </div>
+                        <p class="mt-3 text-muted">Comprehensive testing against OWASP Top 10 vulnerabilities with emphasis on business impact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Projects</h2>
+            <p class="lead text-center mb-5">A selection of my recent work in development and security</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=600&h=400&fit=crop&crop=center" alt="Advanced Calculator App">
+                        <div class="project-overlay">
+                            <a href="https://milan-gautam.github.io/calculator/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Calculator App</h5>
+                            <p class="card-text">A fully functional calculator with advanced features including scientific operations and a clean, responsive UI.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=600&h=400&fit=crop&crop=center" alt="Interactive Chess Game">
+                        <div class="project-overlay">
+                            <a href="https://milan-gautam.github.io/chess/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Interactive Chess Game</h5>
+                            <p class="card-text">A fully playable chess game with move validation, check detection, and a clean intuitive interface.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop&crop=center" alt="Web Vulnerability Scanner">
+                        <div class="project-overlay">
+                            <a href="https://milan-gautam.github.io/web-scanner/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Web Vulnerability Scanner</h5>
+                            <p class="card-text">A custom web application scanner that detects common security vulnerabilities like XSS, SQLi, and CSRF.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Security</span>
+                                <span class="tech-badge">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pentesting Tools Section -->
+    <section id="tools" class="section-padding tools-section">
+        <div class="container">
+            <h2 class="section-title text-center">Pentesting Tools</h2>
+            <p class="lead text-center mb-5">Custom tools and proof-of-concepts created by myself for security testing</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4 mb-4">
+                    <div class="tool-item hover-lift">
+                        <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
+                        <h4>XSS Vulnerability Scanner</h4>
+                        <p>A custom tool to detect Cross-Site Scripting vulnerabilities in web applications with detailed reporting.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="tool-item hover-lift">
+                        <i class="bi bi-search display-4 text-success mb-3"></i>
+                        <h4>CSRF PoC Generator</h4>
+                        <p>A proof-of-concept generator for Cross-Site Request Forgery attacks to demonstrate vulnerability impact.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="tool-item hover-lift">
+                        <i class="bi bi-bug display-4 text-danger mb-3"></i>
+                        <h4>Security Headers Analyzer</h4>
+                        <p>A tool to analyze and report on security headers implementation for any website with improvement suggestions.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">API</span>
+                            <span class="tech-badge">Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificates" class="section-padding cert-section">
+        <div class="container">
+            <h2 class="section-title text-center">Certifications</h2>
+            <p class="lead text-center mb-5">Professional certifications that validate my expertise</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="cert-card hover-lift">
+                        <a href="https://ibb.co/x8KX4dL0"><img src="https://i.ibb.co/h1xLqw9j/1768881769879.jpg" alt="1768881769879" border="0"></a>
+                        <div class="cert-content">
+                            <h5>Advanced Web Development</h5>
+                            <p class="text-muted">Sololearn</p>
+                            <a href="#" class="btn btn-primary cert-btn" data-bs-toggle="modal" data-bs-target="#cert1Modal">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cert-card hover-lift">
+                     <a href="https://imgbb.com/"><img src="https://i.ibb.co/Lz8s5hQ0/Milan-Gautam.png" alt="Milan Gautam" border="0"></a>
+                        <div class="cert-content">
+                            <h5>Cyber Security Fundamentals</h5>
+                            <p class="text-muted">Cybrary</p>
+                            <a href="#" class="btn btn-primary cert-btn" data-bs-toggle="modal" data-bs-target="#cert2Modal">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cert-card hover-lift">
+                                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center" alt="PenTest+ Certificate" class="cert-modal-img">
+                        <div class="cert-content">
+                            <h5>CompTIA PenTest+</h5>
+                            <p class="text-muted">CompTIA</p>
+                            <a href="#" class="btn btn-primary cert-btn" data-bs-toggle="modal" data-bs-target="#cert3Modal">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modals -->
+    <div class="modal fade cert-modal" id="cert1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Advanced Web Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <a href="https://ibb.co/x8KX4dL0"><img src="https://i.ibb.co/h1xLqw9j/1768881769879.jpg" alt="1768881769879" border="0"></a>
+                    </div>
+                    <div class="cert-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Issued By:</span>
+                            <span class="detail-value">Sololearn</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Issued Date:</span>
+                            <span class="detail-value">October 2023</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Credential ID:</span>
+                            <span class="detail-value">CC-JA8PQVS3</span>
+                        </div>
+                    </div>
+                    <div class="cert-description mt-4">
+                        <h6>Description</h6>
+                        <p class="mb-0">Comprehensive certification covering modern web development technologies and responsive design principles. Validates expertise in building professional, accessible web applications.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade cert-modal" id="cert2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cyber Security Fundamentals</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                      <a href="https://imgbb.com/"><img src="https://i.ibb.co/Lz8s5hQ0/Milan-Gautam.png" alt="Milan Gautam" border="0"></a>
+                    </div>
+                    <div class="cert-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Issued By:</span>
+                            <span class="detail-value">Cybrary</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Issued Date:</span>
+                            <span class="detail-value">Feb 2023</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Credential ID:</span>
+                            <span class="detail-value">CYB-SEC-2023-07891</span>
+                        </div>
+                    </div>
+                    <div class="cert-description mt-4">
+                        <h6>Description</h6>
+                        <p class="mb-0">Fundamental security principles and practices for securing web applications against common threats. Covers essential security concepts and implementation techniques.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade cert-modal" id="cert3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CompTIA PenTest+</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center" alt="PenTest+ Certificate" class="cert-modal-img">
+                    </div>
+                    <div class="cert-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Issued By:</span>
+                            <span class="detail-value">CompTIA</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Issued Date:</span>
+                            <span class="detail-value">August 2023</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Credential ID:</span>
+                            <span class="detail-value">COMP-PT-2023-12345</span>
+                        </div>
+                    </div>
+                    <div class="cert-description mt-4">
+                        <h6>Description</h6>
+                        <p class="mb-0">Advanced penetration testing certification covering vulnerability assessment and management. Focuses on planning, scoping, and managing penetration testing projects.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding blog-section">
+        <div class="container">
+            <h2 class="section-title text-center">Security Blog</h2>
+            <p class="lead text-center mb-5">Weekly insights on bug bounty findings, penetration testing techniques, and security research</p>
+            
+            <!-- Search and Controls -->
+            <div class="row mb-4">
+                <div class="col-md-10 mx-auto">
+                    <div class="input-group search-container">
+                        <input type="text" id="blog-search" class="form-control search-input" placeholder="Search blogs by title, content, or tags...">
+                        <button class="btn search-btn" type="button" id="search-button">
+                            <i class="bi bi-search"></i> Search
+                        </button>
+                        <button class="btn clear-btn" type="button" id="clear-button">
+                            <i class="bi bi-x-circle"></i> Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Search Results Info -->
+            <div id="search-results-info" class="alert alert-info text-center mb-4" style="display: none;"></div>
+            
+            <!-- No Results Message -->
+            <div id="no-results-message" class="alert alert-warning text-center mb-4" style="display: none;">
+                <i class="bi bi-exclamation-triangle me-2"></i>No blogs found matching your search criteria.
+            </div>
+            
+            <!-- Blog Grid -->
+            <div class="row g-4" id="blog-container"></div>
+            
+            <!-- View All Button -->
+            <div id="view-all-button" class="text-center mt-5" style="display: block;">
+                <button class="btn btn-outline-primary me-2" id="view-all-btn">
+                    <i class="bi bi-archive me-2"></i>View All Blog Posts
+                </button>
+                <button class="btn btn-outline-secondary" id="back-to-latest" style="display: none;">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Latest
+                </button>
+            </div>
+            
+            <!-- Blog Stats -->
+            <div class="text-center mt-4">
+                <small class="text-muted">
+                    <i class="bi bi-newspaper me-1"></i>
+                    Showing <span id="showing-count">6</span> of <span id="total-count">0</span> articles • New article every Saturday
+                </small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Modal -->
+    <div class="modal fade blog-modal" id="dynamicBlogModal" tabindex="-1" aria-hidden="true"></div>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-padding testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">What My Clients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Milan is an absolute professional! His work on my website was exceptional, and he exceeded my expectations. The security measures he implemented have given us complete peace of mind."</p>
+                            <h5 class="client-name">John Doe</h5>
+                            <span class="client-position">CEO, TechCorp</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Incredible attention to detail. The design and functionality of my website improved significantly after Milan's security consultation. He provided valuable insights we hadn't considered."</p>
+                            <h5 class="client-name">Sarah Smith</h5>
+                            <span class="client-position">Founder, Creative Agency</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Working with Milan was a game changer for our platform. His deep understanding of web vulnerabilities helped us secure critical components before launch. Highly recommended!"</p>
+                            <h5 class="client-name">David Johnson</h5>
+                            <span class="client-position">CTO, TechNova Solutions</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Milan delivers quality work on time! Highly recommend for web development and security projects. His expertise in both frontend and security is a rare combination."</p>
+                            <h5 class="client-name">Michael Johnson</h5>
+                            <span class="client-position">CTO, Startup X</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <p class="lead text-center mb-5">Have a project in mind or need security advice? Let's talk!</p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 contact-info">
+                        <div class="card-body">
+                            <h4 class="card-title">Contact Information</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-envelope me-2"></i> gautammilan2024@gmail.com</li>
+                                <li class="mb-3"><i class="bi bi-phone me-2"></i> +977 (980) 75-51724</li>
+                                <li class="mb-3"><i class="bi bi-geo-alt me-2"></i> Kathmandu, Nepal</li>
+                                <li class="mb-3"><i class="bi bi-shield me-2"></i> Intigriti: milang@intigriti.me</li>
+                            </ul>
+                            <div class="social-icons mt-4">
+                                <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+                                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="bi bi-shield-shaded"></i></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-6">
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Milan. All rights reserved.</p>
+        <a href="#home" class="back-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Success Popup -->
+    <div class="success-popup" id="successPopup">
+        <div class="success-popup-content">
+            <i class="bi bi-check-circle-fill success-icon"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <button class="btn" id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div class="modal fade resume-modal" id="resumeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="resume-header">
+                    <button type="button" class="back-button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <div class="resume-avatar">
+                        <img src="https://i.ibb.co/PGkg45KG/1768160732563.png" alt="Milan">
+                    </div>
+                    <h3>Milan</h3>
+                    <p class="mb-0">Web Developer & Security Specialist</p>
+                </div>
+                <div class="resume-body">
+                    <div class="resume-section">
+                        <h4 class="resume-section-title">Professional Summary</h4>
+                        <p>Passionate web developer and security researcher with 4+ years of experience in building secure, user-friendly web applications. Specialized in frontend development, bug hunting, and penetration testing with a strong focus on implementing security best practices. Regular contributor to the security community through technical blog posts and detailed bug bounty reports.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="resume-section">
+                                <h4 class="resume-section-title">Experience</h4>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Frontend Developer</h5>
+                                    <div class="resume-item-date">2020 - Present</div>
+                                    <p class="resume-item-desc">Freelance & Contract Work</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Bug Bounty Hunter</h5>
+                                    <div class="resume-item-date">2021 - Present</div>
+                                    <p class="resume-item-desc">Various Platforms like Hackerone, Bugcrowd and Intigriti.</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Security Content Writer</h5>
+                                    <div class="resume-item-date">2022 - Present</div>
+                                    <p class="resume-item-desc">Technical Blog & Bug Reports</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Security Researcher</h5>
+                                    <div class="resume-item-date">2022 - Present</div>
+                                    <p class="resume-item-desc">Independent Research</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resume-section">
+                                <h4 class="resume-section-title">Education</h4>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">BS in Computer Science</h5>
+                                    <div class="resume-item-date">2021 - Present</div>
+                                    <p class="resume-item-desc">Tribhuwan University</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Diploma in Cybersecurity</h5>
+                                    <div class="resume-item-date">2024</div>
+                                    <p class="resume-item-desc">Pokhara University</p>
+                                </div>
+                            </div>
+                            <div class="resume-section">
+                                <h4 class="resume-section-title">Content Writing</h4>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Weekly Security Blog</h5>
+                                    <div class="resume-item-date">2023 - Present</div>
+                                    <p class="resume-item-desc">Regular publications on bug bounty findings and penetration testing techniques</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Bug Bounty Reports</h5>
+                                    <div class="resume-item-date">2022 - Present</div>
+                                    <p class="resume-item-desc">Detailed technical reports for vulnerability disclosures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h4 class="resume-section-title">Skills</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Technical Skills</h6>
+                                <div>
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Bootstrap</span>
+                                    <span class="skill-tag">Git</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Security Skills</h6>
+                                <div>
+                                    <span class="skill-tag">Web Security</span>
+                                    <span class="skill-tag">Penetration Testing</span>
+                                    <span class="skill-tag">Vulnerability Assessment</span>
+                                    <span class="skill-tag">OWASP</span>
+                                    <span class="skill-tag">Bug Hunting</span>
+                                    <span class="skill-tag">Security Headers</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <h6>Content Creation</h6>
+                                <div>
+                                    <span class="skill-tag">Technical Writing</span>
+                                    <span class="skill-tag">Bug Reports</span>
+                                    <span class="skill-tag">Blog Management</span>
+                                    <span class="skill-tag">Documentation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h4 class="resume-section-title">Certifications</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Advanced Web Development</h5>
+                                    <div class="resume-item-date">Simplilearn</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">Web Security Fundamentals</h5>
+                                    <div class="resume-item-date">Udemy</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resume-item">
+                                    <h5 class="resume-item-title">CompTIA PenTest+</h5>
+                                    <div class="resume-item-date">CompTIA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

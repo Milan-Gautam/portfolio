@@ -544,7 +544,7 @@ function initBlogSystem() {
 function getLatestBlogs() {
     return blogData.blogs
         .sort((a, b) => new Date(b.date) - new Date(a.date))
-        .slice(0, 3);
+        .slice(0, 4);
 }
 
 function loadBlogs() {
@@ -615,7 +615,7 @@ function loadBlogs() {
                         </div>
                         
                         <div class="blog-tags">
-                            ${blog.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            ${blog.tags.slice(0, 4).map(tag => `<span class="tag">${tag}</span>`).join('')}
                         </div>
                         
                         <div class="blog-actions">

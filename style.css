@@ -654,7 +654,7 @@ body {
 }
 
 .about-img {
-    width: 70% !important;
+    width: 100% !important;
     height: auto !important;
     border-radius: 12px !important;
     border: 3px solid var(--primary-color) !important;
@@ -662,7 +662,11 @@ body {
     object-fit: cover !important;
     transition: transform 0.3s ease !important;
 }
-
+@media (max-width: 576px) {
+    .about-img-container {
+        width: 60% !important;
+    }
+}
 .about-img:hover {
     transform: scale(1.02) !important;
 }

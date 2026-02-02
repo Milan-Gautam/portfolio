@@ -648,8 +648,8 @@ body {
 
 /* Bigger image for desktop and laptop */
 .about-img-container {
-    flex: 0 0 550px !important;
-    max-width: 550px !important;
+    flex: 0 0 520px !important; /* Increased from 480px to 520px */
+    max-width: 520px !important; /* Increased from 480px to 520px */
     position: relative;
 }
 
@@ -661,6 +661,22 @@ body {
     box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15) !important;
     object-fit: cover !important;
     transition: transform 0.3s ease !important;
+}
+
+/* Make image even bigger for larger laptop screens */
+@media (min-width: 1200px) {
+    .about-img-container {
+        flex: 0 0 560px !important; /* Even larger for big screens */
+        max-width: 560px !important;
+    }
+}
+
+/* Keep original size for tablets */
+@media (max-width: 991px) {
+    .about-img-container {
+        flex: 0 0 480px !important;
+        max-width: 480px !important;
+    }
 }
 @media (max-width: 576px) {
     .about-img-container {

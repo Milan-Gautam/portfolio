@@ -648,8 +648,8 @@ body {
 
 /* Bigger image for desktop and laptop */
 .about-img-container {
-    flex: 0 0 480px !important;
-    max-width: 480px !important;
+    flex: 0 0 550px !important;
+    max-width: 550px !important;
     position: relative;
 }
 

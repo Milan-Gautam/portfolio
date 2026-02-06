@@ -3,7 +3,6 @@
 // Blog Data
 const blogData = {
                 "blogs": [
-  "blogs": [
     {
   "id": 6,
   "title": "The API Key in Plain Sight: A JavaScript File Leak",

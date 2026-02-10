@@ -175,11 +175,11 @@ body {
 
 /* Remove Home and About from navbar for desktop */
 @media (min-width: 992px) {
-    .navbar-nav .nav-link[href="#expertise-experience"],
+    .navbar-nav .nav-link[href="#tools"],
     .navbar-nav .nav-link[href="#methodologies"],
     .navbar-nav .nav-link[href="#certificates"],
     .navbar-nav .nav-link[href="#testimonials"],
-    .navbar-navbar .nav-link[href="#projects"] {
+    .navbar-nav .nav-link[href="#projects"] {
         display: none;
     }
     

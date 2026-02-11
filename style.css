@@ -1006,7 +1006,7 @@ body {
     }
 
     .platform-stats .stat-number {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         font-weight: 700;
         color: #10b981;
         margin-bottom: 4px;
@@ -1123,7 +1123,7 @@ body {
     /* ===== RESPONSIVE PERFECTION ===== */
     @media (max-width: 992px) {
         .stats-section { padding: 70px 0 40px; }
-        .stat-number { font-size: 2.4rem; }
+        .stat-number { font-size: 2.2rem; }
         .section-title { font-size: 2.3rem; }
     }
 
@@ -1133,7 +1133,7 @@ body {
             flex: 1 1 140px; 
             padding: 24px 16px;
         }
-        .stat-number { font-size: 2.2rem; }
+        .stat-number { font-size: 1.8rem; }
         
         .fame-platforms {
             grid-template-columns: 1fr;

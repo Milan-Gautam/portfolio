@@ -924,7 +924,7 @@ window.copyInputLink = copyInputLink;
 // Download pdf
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'resume.pdf'; // Your PDF filename
+    link.href = '#resumeModal'; // Your PDF filename
     link.download = 'Milan_Gautam_Resume.pdf';
     link.click();
 }

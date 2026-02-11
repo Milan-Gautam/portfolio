@@ -400,38 +400,115 @@ function initOWASPTooltips() {
 // STATISTICS COUNTER
 // ============================================
 
-function initStatisticsCounter() {
-    const statNumbers = document.querySelectorAll('.stat-number');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    statNumbers.forEach(counter => observer.observe(counter));
-}
-
-function animateCounter(counter) {
-    const target = parseInt(counter.getAttribute('data-count'));
-    const suffix = counter.getAttribute('data-suffix') || '+';
-    const duration = 2000;
-    const step = target / (duration / 16);
-    
-    let current = 0;
-    const timer = setInterval(() => {
-        current += step;
-        if (current >= target) {
-            counter.textContent = target + suffix;
-            clearInterval(timer);
-        } else {
-            counter.textContent = Math.floor(current) + suffix;
+        function initStatisticsCounter() {
+            const statNumbers = document.querySelectorAll('.stat-number[data-count]');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.3,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            statNumbers.forEach(counter => observer.observe(counter));
         }
-    }, 16);
-}
+
+        function animateCounter(counter) {
+            const target = parseInt(counter.getAttribute('data-count'));
+            const suffix = counter.getAttribute('data-suffix') || '';
+            
+            if (isNaN(target)) {
+                counter.style.opacity = '1';
+                return;
+            }
+            
+            const duration = 1500;
+            const startTime = Date.now();
+            
+            const updateCounter = () => {
+                const elapsed = Date.now() - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Smooth easing
+                const easeOutQuart = t => 1 - Math.pow(1 - t, 4);
+                const easedProgress = easeOutQuart(progress);
+                
+                const currentValue = Math.floor(easedProgress * target);
+                
+                // Display the number with suffix
+                counter.textContent = currentValue + suffix;
+                counter.style.opacity = 0.3 + (easedProgress * 0.7);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    // Final display with suffix
+                    counter.textContent = target + suffix;
+                    counter.style.opacity = '1';
+                }
+            };
+            
+            updateCounter();
+        }
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', function() {
+            initStatisticsCounter();
+            
+            // Add smooth entrance animations
+            const animateElements = (elements, delay = 100) => {
+                elements.forEach((el, index) => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(20px)';
+                    el.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                    
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, index * delay);
+                });
+            };
+            
+            // Animate stat items
+            const statItems = document.querySelectorAll('.stat-item');
+            animateElements(statItems, 150);
+            
+            // Animate platform cards with Intersection Observer
+            const cards = document.querySelectorAll('.platform-card');
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 200);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                cardObserver.observe(card);
+            });
+            
+            // Add hover effect for platform cards
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
+                });
+            });
+        });
 
 // ============================================
 // CONTACT FORM WITH EMAILJS - WORKING VERSION

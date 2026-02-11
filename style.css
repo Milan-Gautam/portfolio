@@ -765,7 +765,7 @@ body {
             text-align: center;
             font-size: 1rem;
             font-weight: 600;
-            color: var(--medium-gray);
+            color: black;
             margin-bottom: 50px;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -798,9 +798,9 @@ body {
         }
 
         .stat-number {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 700;
-            color: var(--dark-navy);
+            color: #10b981;
             margin-bottom: 8px;
             display: block;
             line-height: 1;
@@ -809,599 +809,405 @@ body {
 
         .stat-label {
             font-size: 1rem;
-            color: var(--medium-gray);
+            color: #10b981;
             font-weight: 500;
             letter-spacing: 0.3px;
         }
 
-        /* ===== HALL OF FAME SECTION - PERFECT VISIBILITY ===== */
-.hall-of-fame-section {
-    padding: 40px 0 120px;
-    background: var(--hof-grey);
-    position: relative;
-}
-
-.hall-of-fame-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--hof-border-light), transparent);
-}
-
-.hall-of-fame-section .section-header {
-    text-align: center;
-    margin-bottom: 70px;
-    padding: 0 20px;
-}
-
-.hall-of-fame-section .section-subtitle {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--hof-primary-blue);
-    margin-bottom: 18px;
-}
-
-.hall-of-fame-section .section-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: var(--hof-dark-navy);
-    margin-bottom: 24px;
-    line-height: 1.1;
-    position: relative;
-    display: inline-block;
-}
-
-.hall-of-fame-section .section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--hof-primary-blue), var(--hof-primary-green));
-    border-radius: 2px;
-}
-
-.hall-of-fame-section .section-description {
-    font-size: 1.15rem;
-    color: var(--hof-medium-gray);
-    max-width: 680px;
-    margin: 30px auto 0;
-    line-height: 1.7;
-}
-
-/* Platforms Grid */
-.hall-of-fame-section .fame-platforms {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 32px;
-    max-width: 1140px;
-    margin: 0 auto 80px;
-    padding: 0 20px;
-}
-
-.hall-of-fame-section .platform-card {
-    background: var(--hof-white);
-    border-radius: 20px;
-    padding: 36px;
-    box-shadow: var(--hof-shadow-subtle);
-    border: 1px solid var(--hof-border-light);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.hall-of-fame-section .platform-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.hall-of-fame-section .hackerone::before {
-    background: linear-gradient(90deg, #4945FF, #0A0A23);
-}
-
-.hall-of-fame-section .intigriti::before {
-    background: linear-gradient(90deg, #00B67A, #008C5E);
-}
-
-.hall-of-fame-section .bugcrowd::before {
-    background: linear-gradient(90deg, #F26822, #D45A1C);
-}
-
-.hall-of-fame-section .platform-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--hof-shadow-hover);
-}
-
-.hall-of-fame-section .platform-card:hover::before {
-    opacity: 1;
-}
-
-.hall-of-fame-section .platform-badge {
-    width: 72px;
-    height: 72px;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 32px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    padding: 12px;
-    background: var(--hof-white);
-    border: 2px solid var(--hof-border-light);
-}
-
-.hall-of-fame-section .hackerone .platform-badge,
-.hall-of-fame-section .intigriti .platform-badge {
-    background: var(--hof-white);
-    border: 2px solid var(--hof-border-light);
-}
-
-.hall-of-fame-section .bugcrowd .platform-badge {
-    background: linear-gradient(135deg, #D45A1C, #F26822);
-    border: 2px solid rgba(242, 104, 34, 0.2);
-}
-
-.hall-of-fame-section .platform-card:hover .platform-badge {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.hall-of-fame-section .platform-logo {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: all 0.3s ease;
-}
-
-.hall-of-fame-section .hackerone .platform-logo,
-.hall-of-fame-section .intigriti .platform-logo {
-    filter: brightness(0.2);
-}
-
-.hall-of-fame-section .bugcrowd .platform-logo {
-    filter: brightness(0) invert(1);
-}
-
-.hall-of-fame-section .platform-content {
-    flex: 1;
-}
-
-.hall-of-fame-section .platform-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--hof-border-light);
-}
-
-.hall-of-fame-section .platform-header h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--hof-dark-navy);
-    margin: 0;
-    letter-spacing: -0.3px;
-}
-
-.hall-of-fame-section .platform-rank {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--hof-white);
-    padding: 8px 16px;
-    border-radius: 20px;
-    background: var(--hof-primary-blue);
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
-}
-
-.hall-of-fame-section .intigriti .platform-rank {
-    background: var(--hof-primary-green);
-    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
-}
-
-.hall-of-fame-section .bugcrowd .platform-rank {
-    background: var(--hof-primary-orange);
-    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.2);
-}
-
-.hall-of-fame-section .platform-description {
-    color: var(--hof-medium-gray);
-    line-height: 1.7;
-    margin-bottom: 32px;
-    font-size: 1.05rem;
-}
-
-.hall-of-fame-section .platform-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-bottom: 32px;
-    padding: 24px;
-    background: var(--hof-light-bg);
-    border-radius: 16px;
-    border: 1px solid var(--hof-border-light);
-}
-
-.hall-of-fame-section .stat {
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.hall-of-fame-section .stat:hover {
-    transform: translateY(-2px);
-}
-
-.hall-of-fame-section .platform-stats .stat-number {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--hof-dark-navy);
-    margin-bottom: 4px;
-}
-
-.hall-of-fame-section .platform-stats .stat-label {
-    font-size: 0.9rem;
-    color: var(--hof-light-gray);
-    font-weight: 500;
-}
-
-.hall-of-fame-section .platform-achievements {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 32px;
-}
-
-.hall-of-fame-section .achievement {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--hof-medium-gray);
-    background: var(--hof-light-bg);
-    padding: 10px 16px;
-    border-radius: 10px;
-    border: 1px solid var(--hof-border-light);
-    transition: all 0.2s ease;
-}
-
-.hall-of-fame-section .platform-card:hover .achievement {
-    border-color: transparent;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.hall-of-fame-section .achievement i {
-    color: var(--hof-primary-blue);
-    font-size: 0.9rem;
-}
-
-.hall-of-fame-section .platform-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--hof-primary-blue);
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 12px;
-    border: 1.5px solid rgba(37, 99, 235, 0.2);
-    background: rgba(37, 99, 235, 0.04);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: auto;
-    width: fit-content;
-}
-
-.hall-of-fame-section .platform-link:hover {
-    background: var(--hof-primary-blue);
-    color: var(--hof-white);
-    border-color: var(--hof-primary-blue);
-    transform: translateX(4px);
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
-}
-
-.hall-of-fame-section .platform-link i {
-    font-size: 0.9rem;
-    transition: transform 0.3s ease;
-}
-
-.hall-of-fame-section .platform-link:hover i {
-    transform: translateX(3px);
-}
-
-.hall-of-fame-section .closing-section {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 60px 40px;
-    text-align: center;
-    position: relative;
-}
-
-.hall-of-fame-section .closing-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--hof-primary-blue), var(--hof-primary-green));
-    border-radius: 2px;
-}
-
-.hall-of-fame-section .closing-text {
-    font-size: 1.3rem;
-    color: var(--hof-dark-navy);
-    line-height: 1.6;
-    margin-bottom: 16px;
-    font-weight: 600;
-}
-
-.hall-of-fame-section .closing-subtext {
-    font-size: 1.05rem;
-    color: var(--hof-medium-gray);
-    line-height: 1.6;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.hall-of-fame-section .closing-highlight {
-    color: var(--hof-primary-blue);
-    font-weight: 700;
-}
-
-/* ===== STATS SECTION ===== */
-.stats-section {
-    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
-    padding: 100px 0 70px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 90px;
-}
-
-.stats-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--hof-border-light), transparent);
-}
-
-.stats-container {
-    background: var(--hof-white);
-    border-radius: 24px;
-    padding: 60px 40px;
-    box-shadow: var(--hof-shadow-hover);
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    border: 1px solid var(--hof-border-light);
-}
-
-.stats-title {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--hof-medium-gray);
-    margin-bottom: 50px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-bottom: 12px;
-}
-
-.stats-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--hof-primary-blue), transparent);
-}
-
-.stat-item {
-    text-align: center;
-    padding: 20px 15px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-}
-
-.stat-item:hover {
-    transform: translateY(-5px);
-}
-
-.stat-number {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--hof-dark-navy);
-    margin-bottom: 8px;
-    display: block;
-    line-height: 1;
-}
-
-.stat-label {
-    font-size: 1rem;
-    color: var(--hof-medium-gray);
-    font-weight: 500;
-    letter-spacing: 0.3px;
-}
-
-/* ===== RESPONSIVE FOR HALL OF FAME ===== */
-@media (max-width: 1200px) {
-    .hall-of-fame-section .fame-platforms {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 900px;
-    }
-    
-    .hall-of-fame-section .section-title {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .stats-section {
-        padding: 80px 0 50px;
-        margin-bottom: 70px;
-    }
-    
-    .stats-container {
-        padding: 50px 30px;
-    }
-    
-    .stat-number {
-        font-size: 2.8rem;
-    }
-    
-    .hall-of-fame-section .closing-section {
-        padding: 50px 30px;
-    }
-}
-
-@media (max-width: 768px) {
+       /* ===== HALL OF FAME – PERFECT BOX ALIGNMENT ===== */
     .hall-of-fame-section {
-        padding: 30px 0 80px;
+        padding: 30px 0 100px;
+        background: var(--hof-grey);
     }
-    
-    .hall-of-fame-section .section-title {
-        font-size: 2.2rem;
-    }
-    
-    .hall-of-fame-section .section-description {
-        font-size: 1.1rem;
-    }
-    
-    .hall-of-fame-section .fame-platforms {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        max-width: 520px;
-    }
-    
-    .hall-of-fame-section .platform-card {
-        padding: 32px;
-    }
-    
-    .hall-of-fame-section .platform-stats {
-        padding: 22px;
-        gap: 16px;
-    }
-    
-    .stats-container {
-        padding: 40px 24px;
-    }
-    
-    .hall-of-fame-section .closing-text {
-        font-size: 1.2rem;
-    }
-}
 
-@media (max-width: 576px) {
-    .hall-of-fame-section .section-title {
-        font-size: 2rem;
-    }
-    
-    .hall-of-fame-section .section-subtitle {
-        font-size: 0.85rem;
-    }
-    
-    .hall-of-fame-section .platform-header {
-        flex-direction: column;
-        gap: 14px;
-        align-items: flex-start;
-    }
-    
-    .hall-of-fame-section .platform-stats {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .hall-of-fame-section-header {
         text-align: center;
+        max-width: 720px;
+        margin: 0 auto 60px;
     }
-    
-    .hall-of-fame-section .stat {
-        padding-bottom: 20px;
+
+    .hall-of-fame-section-subtitle {
+        display: block;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--hof-primary-blue);
+        margin-bottom: 16px;
+    }
+
+    .hall-of-fame-section-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 1.15;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hall-of-fame-section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--hof-primary-blue), var(--hof-primary-green));
+        border-radius: 3px;
+    }
+
+    .hall-of-fame-section-description {
+        font-size: 1.15rem;
+        color: var(--hof-medium-gray);
+        margin-top: 28px;
+    }
+
+    /* Platforms Grid – FIXED OVERFLOW */
+    .fame-platforms {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 32px;
+        max-width: 1140px;
+        margin: 0 auto 70px;
+    }
+
+    .platform-card {
+        background: var(--hof-white);
+        border-radius: 24px;
+        padding: 32px 28px;
+        box-shadow: var(--hof-shadow-subtle);
+        border: 1px solid var(--hof-border-light);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .platform-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--hof-shadow-hover);
+    }
+
+    /* Top accent border */
+    .platform-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+    }
+
+    .platform-card:hover::before {
+        opacity: 1;
+    }
+
+    .hackerone::before { background: linear-gradient(90deg, #4945FF, #0A0A23); }
+    .intigriti::before { background: linear-gradient(90deg, #00B67A, #008C5E); }
+    .bugcrowd::before { background: linear-gradient(90deg, #F26822, #D45A1C); }
+
+    .platform-badge {
+        width: 68px;
+        height: 68px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 28px;
+        background: var(--hof-white);
+        border: 2px solid var(--hof-border-light);
+        padding: 12px;
+        transition: transform 0.25s ease;
+    }
+
+    .bugcrowd .platform-badge {
+        background: linear-gradient(145deg, #F26822, #D45A1C);
+        border: none;
+    }
+
+    .platform-card:hover .platform-badge {
+        transform: scale(1.02) translateY(-2px);
+    }
+
+    .platform-logo {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hackerone .platform-logo,
+    .intigriti .platform-logo {
+        filter: brightness(0.15);
+    }
+
+    .bugcrowd .platform-logo {
+        filter: brightness(0) invert(1);
+    }
+
+    .platform-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+        padding-bottom: 22px;
         border-bottom: 1px solid var(--hof-border-light);
+        flex-wrap: wrap;
+        gap: 12px;
     }
-    
-    .hall-of-fame-section .stat:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-    
-    .hall-of-fame-section .platform-achievements {
-        justify-content: center;
-    }
-    
-    .hall-of-fame-section .achievement {
-        padding: 8px 14px;
-        font-size: 0.85rem;
-    }
-    
-    .hall-of-fame-section .platform-link {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .stats-container {
-        padding: 36px 20px;
-        border-radius: 20px;
-    }
-    
-    .stat-number {
-        font-size: 2.5rem;
-    }
-    
-    .hall-of-fame-section .closing-section {
-        padding: 40px 24px;
-    }
-    
-    .hall-of-fame-section .closing-text {
-        font-size: 1.1rem;
-    }
-}
 
-@media (max-width: 400px) {
-    .hall-of-fame-section .platform-card {
-        padding: 28px 24px;
+    .platform-header h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--hof-dark-navy);
+        letter-spacing: -0.02em;
     }
-    
-    .hall-of-fame-section .platform-achievements {
-        flex-direction: column;
-        align-items: stretch;
+
+    .platform-rank {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: white;
+        padding: 6px 16px;
+        border-radius: 30px;
+        background: var(--hof-primary-blue);
+        white-space: nowrap;
     }
-    
-    .hall-of-fame-section .achievement {
-        width: 100%;
-        justify-content: center;
+
+    .intigriti .platform-rank { background: var(--hof-primary-green); }
+    .bugcrowd .platform-rank { background: var(--hof-primary-orange); }
+
+    .platform-description {
+        color: var(--hof-medium-gray);
+        line-height: 1.65;
+        margin-bottom: 28px;
+        font-size: 1rem;
+    }
+
+    /* Stats inside cards – perfectly aligned */
+    .platform-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 22px 18px;
+        background: var(--hof-light-bg);
+        border-radius: 18px;
+        border: 1px solid var(--hof-border-light);
+        margin-bottom: 28px;
+    }
+
+    .platform-stats .stat {
         text-align: center;
     }
-    
-    .hall-of-fame-section .closing-section {
-        padding: 36px 20px;
+
+    .platform-stats .stat-number {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #10b981;
+        margin-bottom: 4px;
     }
-}
+
+    .platform-stats .stat-label {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #10b981;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .platform-achievements {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+
+    .achievement {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--hof-medium-gray);
+        background: var(--hof-light-bg);
+        padding: 8px 16px;
+        border-radius: 30px;
+        border: 1px solid var(--hof-border-light);
+        transition: all 0.2s;
+    }
+
+    .platform-card:hover .achievement {
+        border-color: transparent;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    }
+
+    .achievement i {
+        color: var(--hof-primary-blue);
+        font-size: 0.85rem;
+    }
+
+    .platform-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--hof-primary-blue);
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 40px;
+        border: 1.5px solid rgba(37,99,235,0.15);
+        background: rgba(37,99,235,0.03);
+        transition: all 0.25s;
+        margin-top: auto;
+        width: fit-content;
+    }
+
+    .platform-link:hover {
+        background: var(--hof-primary-blue);
+        color: white;
+        border-color: var(--hof-primary-blue);
+        transform: translateX(5px);
+        box-shadow: 0 8px 18px rgba(37,99,235,0.2);
+    }
+
+    .platform-link i {
+        transition: transform 0.2s;
+        font-size: 0.85rem;
+    }
+
+    .platform-link:hover i {
+        transform: translateX(4px);
+    }
+
+    /* Closing Section */
+    .closing-section {
+        max-width: 700px;
+        margin: 40px auto 0;
+        padding: 48px 32px;
+        text-align: center;
+        position: relative;
+        background: var(--hof-white);
+        border-radius: 40px;
+        border: 1px solid var(--hof-border-light);
+        box-shadow: var(--hof-shadow-subtle);
+    }
+
+    .closing-text {
+        font-size: 1.35rem;
+        color: var(--hof-dark-navy);
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+
+    .closing-highlight {
+        color: var(--hof-primary-blue);
+        border-bottom: 2px solid rgba(37,99,235,0.2);
+        padding-bottom: 2px;
+    }
+
+    .closing-subtext {
+        font-size: 1.05rem;
+        color: var(--hof-medium-gray);
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    /* ===== RESPONSIVE PERFECTION ===== */
+    @media (max-width: 992px) {
+        .stats-section { padding: 70px 0 40px; }
+        .stat-number { font-size: 2.4rem; }
+        .section-title { font-size: 2.3rem; }
+    }
+
+    @media (max-width: 768px) {
+        .stats-grid { gap: 20px; }
+        .stat-card { 
+            flex: 1 1 140px; 
+            padding: 24px 16px;
+        }
+        .stat-number { font-size: 2.2rem; }
+        
+        .fame-platforms {
+            grid-template-columns: 1fr;
+            max-width: 500px;
+        }
+        
+        .section-title { font-size: 2rem; }
+        .section-description { font-size: 1.05rem; }
+        
+        .platform-header { flex-direction: column; align-items: flex-start; }
+        .platform-rank { align-self: flex-start; }
+        
+        .closing-section { padding: 40px 24px; }
+        .closing-text { font-size: 1.25rem; }
+    }
+
+    @media (max-width: 576px) {
+        .stats-grid { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .stat-card { 
+            width: 100%;
+            min-width: unset;
+        }
+        
+        .platform-stats {
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+        
+        .platform-stats .stat {
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--hof-border-light);
+        }
+        
+        .platform-stats .stat:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .platform-achievements { 
+            justify-content: flex-start;
+        }
+        
+        .platform-link { 
+            width: 100%; 
+            justify-content: center;
+        }
+        
+        .closing-text { font-size: 1.15rem; }
+        .closing-subtext { font-size: 0.95rem; }
+    }
+
+    @media (max-width: 400px) {
+        .stats-grid { grid-template-columns: 1fr; }
+        .stat-card { max-width: 260px; margin: 0 auto; }
+        
+        .platform-card { padding: 28px 20px; }
+        .platform-badge { width: 60px; height: 60px; }
+        .platform-header h3 { font-size: 1.4rem; }
+        
+        .platform-achievements { 
+            flex-direction: column; 
+            align-items: stretch;
+        }
+        .achievement { 
+            width: 100%; 
+            justify-content: center;
+        }
+    }
+
+/*END OF HoF */
 
 /* Core Competencies */
 .core-competencies {
@@ -3647,7 +3453,7 @@ footer {
 .stat-number {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #667eea;
+    color: #10b981;
     line-height: 1.2;
 }
 
@@ -3744,6 +3550,42 @@ footer {
     background: #f0f9ff;
     border-color: #b6d4fe;
     color: #2c5282;
+}
+/* Social links*/
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+}
+
+.social-item i {
+    width: 20px;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.social-item span:first-of-type {
+    min-width: 80px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.social-link-text {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-link-text:hover {
+    text-decoration: underline;
 }
 
 /* Certifications */

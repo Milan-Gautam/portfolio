@@ -3329,7 +3329,8 @@ footer {
 .resume-modal .modal-dialog {
     max-width: 100%;
     width: 95%;
-    margin: 0;
+    margin: 10px;
+    padding: 10px;
 }
 .resume-modal .modal-content {
     border: none;

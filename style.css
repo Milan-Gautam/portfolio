@@ -424,7 +424,7 @@ body {
 }
 
 .text-highlight {
-    color: var(--secondary-color);
+    color: #f97316;
     position: relative;
 }
 

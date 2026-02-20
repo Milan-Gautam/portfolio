@@ -811,6 +811,7 @@ body {
     flex: 0 0 600px !important;
     max-width: 600px !important;
     position: relative;
+    background-color: white;
 }
 
 .about-img {

@@ -807,10 +807,9 @@ body {
 }
 
 /* Bigger image for desktop and laptop */
-/* Bigger image for desktop and laptop */
 .about-img-container {
-    flex: 0 0 580px !important;
-    max-width: 580px !important;
+    flex: 0 0 600px !important;
+    max-width: 600px !important;
     position: relative;
 }
 
@@ -866,12 +865,6 @@ body {
 @media (max-width: 768px) {
     .about-img-container {
         max-width: 500px !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .about-img-container {
-        max-width: 420px !important;
     }
 }
 

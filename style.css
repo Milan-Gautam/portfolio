@@ -808,8 +808,8 @@ body {
 
 /* Bigger image for desktop and laptop */
 .about-img-container {
-    flex: 0 0 480px !important;
-    max-width: 480px !important;
+    flex: 0 0 520px !important; /* Increased from 480px */
+    max-width: 520px !important; /* Increased from 480px */
     position: relative;
 }
 
@@ -827,16 +827,18 @@ body {
     transform: scale(1.02) !important;
 }
 
-@media (max-width: 576px) {
-    .about-img-container {
-        width: 60% !important;
-    }
-}
 .about-text {
     flex: 1;
 }
 
 /* Responsive about section */
+@media (max-width: 1400px) {
+    .about-img-container {
+        flex: 0 0 480px !important;
+        max-width: 480px !important;
+    }
+}
+
 @media (max-width: 1200px) {
     .about-content {
         gap: 50px;
@@ -857,20 +859,29 @@ body {
     
     .about-img-container {
         flex: 0 0 100% !important;
-        max-width: 380px !important;
+        max-width: 400px !important; /* Slightly increased from 380px */
         margin: 0 auto !important;
     }
 }
 
 @media (max-width: 768px) {
     .about-img-container {
-        max-width: 350px !important;
+        max-width: 380px !important; /* Increased from 350px */
     }
 }
 
 @media (max-width: 576px) {
     .about-img-container {
-        max-width: 320px !important;
+        max-width: 340px !important; /* Increased from 320px */
+        width: 80% !important; /* Added width control */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    .about-img-container {
+        max-width: 280px !important;
+        width: 90% !important;
     }
 }
 

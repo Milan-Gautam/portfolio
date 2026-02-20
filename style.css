@@ -1448,7 +1448,7 @@ body {
 
 #expertise-experience .expertise-grid {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 30px !important;
     margin-bottom: 60px !important;
 }
@@ -1772,8 +1772,9 @@ body {
 /* ===== RESPONSIVE DESIGN FOR EXPERTISE ===== */
 @media (max-width: 1100px) {
     #expertise-experience .expertise-grid {
-        grid-template-columns: 1fr !important;
-        max-width: 800px !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 25px !important;
+        max-width: 900px !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
@@ -1825,14 +1826,19 @@ body {
     }
 }
 
+@media (max-width: 767px) {
+    #expertise-experience .expertise-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        max-width: 500px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
 @media (max-width: 480px) {
     #expertise-experience .section-title {
         font-size: 1.8rem;
-    }
-
-    #expertise-experience .expertise-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px;
     }
 
     #expertise-experience .professional-card {
@@ -1885,6 +1891,7 @@ body {
 #expertise-experience .professional-card:nth-child(2) { animation-delay: 0.2s; }
 #expertise-experience .professional-card:nth-child(3) { animation-delay: 0.3s; }
 #expertise-experience .professional-card:nth-child(4) { animation-delay: 0.4s; }
+
 
 /* Projects Section */
 .project-card {

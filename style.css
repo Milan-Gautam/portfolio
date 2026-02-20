@@ -809,7 +809,7 @@ body {
 /* Bigger image for desktop and laptop */
 .about-img-container {
     flex: 0 0 600px !important;
-    max-width: 600px !important;
+    max-width: 800px !important;
     position: relative;
     background-color: white;
 }
@@ -858,14 +858,14 @@ body {
     
     .about-img-container {
         flex: 0 0 100% !important;
-        max-width: 550px !important;
+        max-width: 650px !important;
         margin: 0 auto !important;
     }
 }
 
 @media (max-width: 768px) {
     .about-img-container {
-        max-width: 500px !important;
+        max-width: 550px !important;
     }
 }
 

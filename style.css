@@ -809,9 +809,8 @@ body {
 /* Bigger image for desktop and laptop */
 .about-img-container {
     flex: 0 0 600px !important;
-    max-width: 800px !important;
+    max-width: 600px !important;
     position: relative;
-    background-color: white;
 }
 
 .about-img {

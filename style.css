@@ -824,7 +824,7 @@ body {
 }
 
 .about-img:hover {
-    transform: scale(1.1) !important;
+    transform: scale(1.5) !important;
 }
 
 @media (max-width: 576px) {
